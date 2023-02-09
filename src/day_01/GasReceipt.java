@@ -1,7 +1,5 @@
 package day_01;
 
-import java.sql.SQLOutput;
-
 public class GasReceipt {
 
     public static void main(String[] args) {
