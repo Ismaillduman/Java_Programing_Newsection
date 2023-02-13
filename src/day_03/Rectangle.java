@@ -3,8 +3,8 @@ package day_03;
 public class Rectangle {
     public static void main(String[] args) {
 
-        double width= 2.5;
-        double length= 3.4;
+        double width = 2.5;
+        double length = 3.4;
         double area;
 
         area = width * length;
