@@ -10,5 +10,6 @@ public class GasReceipt {
         System.out.println("Price/Gallon:   $4.15");
         System.out.println("");
         System.out.println("FUEL Total:     $47.642");
+
     }
 }
