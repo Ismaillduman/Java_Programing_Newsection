@@ -11,35 +11,32 @@ public class MedianNumber {
             Output:
                 15 is the median number*/
 
-        int a= 18;
-        int b= 15;
-        int c= 20;
+        int a= 180;
+        int b= 35;
+        int c= 120;
+        int median = 0;
+
 
         if(a<b && c>a){
             if(b>c){
-                System.out.println(c + " is the median number");
+             median = c;
             }
-            else{System.out.println(b + " is the median number");
+            else{median=b;
         }
 
         }
 
         if(b<a && c>b){
             if(a>c){
-                System.out.println(c + " is the median number");
+                median =c;
             }
-            else{System.out.println(a+ " is the median number");
-            }
-
-        }
-        if(c<b && b>a){
-            if(a>c){
-                System.out.println(c + " is the median number");
-            }
-            else{System.out.println(a + " is the median number");
+            else{
+                median=a;
             }
 
         }
+
+        System.out.println("median number is "+median);
 
 
 }

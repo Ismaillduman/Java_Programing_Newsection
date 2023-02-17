@@ -16,16 +16,37 @@ public class NumberToWord {
 				One
 
 		Note: Do not use more than one print statement*/
-        int number = 0;
+        int number = 5;
+        String word="";
 
 
         if (number==0){
-            String word="zero";
+           word="zero";
 
         }else if (number==1){
-            String word="one";
-
+           word="one";
         }
-
+        else if (number==2){
+            word="two";
+        }
+        else if (number==3){
+            word="three";
+        }
+        else if (number==4){
+            word="four";
+        }
+        else if (number==5){
+            word="five";
+        }
+        else if (number==6){
+            word="six";
+        } else if (number==7){
+            word="seven";
+        } else if (number==8){
+            word="eight";
+        }else{
+            word="nine";
+        }
+        System.out.println(number+" "+ word);
     }
 }
