@@ -4,7 +4,7 @@ public class GradeLevel {
     public static void main(String[] args) {
 
         int gradeLevel=11;
-        String result="";
+        String result;
 
         if(gradeLevel<=5 && gradeLevel>=1){
            result= " grade level is Elementary school";
