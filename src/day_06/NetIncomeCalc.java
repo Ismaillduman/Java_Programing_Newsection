@@ -14,30 +14,29 @@ Create a class named NetIncomeCalc, Write a program that can calculate the salar
 
 */
 
-        double salary= 130000;
-        double netIncome= 0.0;
-        boolean isMarried= true;
-        if(salary<=79000){
-            netIncome= salary - salary*20/100;
-            if(isMarried=true){
-                netIncome=salary - salary*15/100;
-            }
-        } else if (80000<=salary&&salary<=99000) {
-            netIncome= salary - salary*25/100;
-            if(isMarried=true){
-                netIncome=salary - salary*20/100;
-            } }
-            else if (100000<=salary&&salary<=129000) {
-                netIncome= salary - salary*30/100;
-                if(isMarried=true){
-                    netIncome=salary - salary*25/100;
-                }}
-                else if (130000<=salary) {
-                    netIncome= salary - salary*35/100;
-                    if(isMarried=true){
-                        netIncome=salary - salary*30/100;
-                    }
+        double salary = 130000;
+        double netIncome = 0.0;
+        boolean isMarried = true;
+        double taxRate = 0.0;
+
+        if (salary <= 79000) {
+            taxRate = 0.2;
+
+        } else if (80000 <= salary && salary <= 99000) {
+            taxRate = 0.25;
+        } else if (100000 <= salary && salary <= 129000) {
+            taxRate = 0.3;
+        } else if (130000 <= salary) {
+            taxRate = 0.35;
+
+        }
+        if (isMarried = true) {
+            taxRate -= 0.05;
+
         }
 
-        System.out.println(netIncome);
-    }}
+        System.out.println("netIncome = salary-(salary * taxRate) = " + (netIncome = salary* (1- taxRate)));
+
+
+    }
+}
