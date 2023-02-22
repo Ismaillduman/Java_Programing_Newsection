@@ -9,13 +9,21 @@ public class AgeGroups {
 
         if (age < 150 && age > 0) {
             if (age < 21) {
+
+           
+
                 result = "Teenagers";
+
             } else if (age >= 21 && age < 55) {
                 result = "Adult";
             } else if (age > 55) {
                 result = "Senior";
             }
+
+      
+
         } else{result="invalid AGE range";}
+
         System.out.println(result);
     }
 }
