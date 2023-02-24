@@ -18,6 +18,6 @@ public class Grade {
         }
     }
     else{result="invalid grade";}
-        System.out.println("result = " + result);
+        System.out.println( result);
     }
 }

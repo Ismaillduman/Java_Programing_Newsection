@@ -25,5 +25,6 @@ public class AgeGroups {
         }
 
         System.out.println("result = " + result);
+
     }
 }
