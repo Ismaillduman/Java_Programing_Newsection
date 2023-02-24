@@ -1,6 +1,6 @@
 package replit_tasks;
 
-public class printVariable_3 {
+public class PrintVariable_3 {
 
     public static void main(String[] args) {
         String p1 = "James";

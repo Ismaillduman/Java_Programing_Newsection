@@ -1,8 +1,6 @@
 package replit_tasks;
 
-import org.w3c.dom.ls.LSOutput;
-
-public class planeTicket {
+public class PlaneTicket {
     /*city 1 -> Chicago
 	city 2 -> Virginia
 	base ticket price -> 110.50
