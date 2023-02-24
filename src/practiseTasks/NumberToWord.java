@@ -20,7 +20,7 @@ public class NumberToWord {
                 (num == 5) ? "fünf" : (num == 6) ? "sechs" : (num == 7) ? "sieben" : (num == 8) ? "acht" : (num == 9) ? "neun" : "enter valid number";
 
 
-        System.out.println(result);
+        System.out.println("result = " + result);
 
 
     }
