@@ -1,4 +1,4 @@
-package review_02;
+package reviews.review_02;
 
 public class Operators {
     public static void main(String[] args) {
