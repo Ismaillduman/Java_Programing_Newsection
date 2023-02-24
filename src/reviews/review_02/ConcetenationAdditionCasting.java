@@ -1,4 +1,4 @@
-package review_02;
+package reviews.review_02;
 
 public class ConcetenationAdditionCasting {
     public static void main(String[] args) {
