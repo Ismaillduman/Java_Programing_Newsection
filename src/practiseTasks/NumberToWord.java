@@ -13,7 +13,7 @@ public class NumberToWord {
 		Note: MUST use ternary
 */
 
-        int num = 10;
+        int num = 20;
         String result;
 
         result = (num == 0) ? "zero" : (num == 1) ? "one" : (num == 2) ? "two" : (num == 3) ? "three" : (num == 4) ? "vier" :
