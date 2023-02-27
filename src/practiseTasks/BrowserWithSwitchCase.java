@@ -10,18 +10,18 @@ public class BrowserWithSwitchCase {
 
         	Do Not use if statement or ternary*/
 
-String browserName="";
+String browserName="chrome";
 switch (browserName){
     case "chrome":
-        break;
+
     case "firefox":
-        break;
+
     case "opera":
-        break;
+
     case "safari":
-        break;
+
     case "edge":
-        break;
+
     default:
         System.out.println("Invalid Browser");
 }
