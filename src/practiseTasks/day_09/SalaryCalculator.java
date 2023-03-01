@@ -34,6 +34,8 @@ public class SalaryCalculator {
 
         System.out.println("netIncome = " + netIncome+ " gross salary= "+ grossSalary + " state tax= "+
                 stateTax+" federal tax= "+federalTax+" total Tax= "+totalTax);
+
+        sc.close();
     }
 
 

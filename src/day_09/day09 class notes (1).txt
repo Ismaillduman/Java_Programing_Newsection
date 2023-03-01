@@ -1,5 +1,3 @@
-Java Programming Day09
-
 Topics: Switch Statement Continue
 		Scanner Intro
 

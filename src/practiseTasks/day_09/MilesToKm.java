@@ -19,5 +19,6 @@ public class MilesToKm {
         double km= miles*1.6;
 
         System.out.println(miles+ " miles ==>> "+ km+" km");
+        sc.close();
     }
 }
