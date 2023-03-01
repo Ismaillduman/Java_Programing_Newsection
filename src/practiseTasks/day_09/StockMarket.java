@@ -23,6 +23,7 @@ public class StockMarket {
         Scanner sc = new Scanner(System.in);
         System.out.println("how many total shares you have already");
         int shares = sc.nextInt();
+        sc.close();
         if (shares > 0) {
             System.out.println("how much your total value in the stock market is");
             double total_value = sc.nextDouble();

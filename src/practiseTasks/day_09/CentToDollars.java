@@ -19,7 +19,7 @@ public class CentToDollars {
         int dollar = cents / 100;
 
         System.out.println(cents + " cents= " + dollar + " dollar " + cents % 100 + " cents");
-
+input.close();
 
     }
 }

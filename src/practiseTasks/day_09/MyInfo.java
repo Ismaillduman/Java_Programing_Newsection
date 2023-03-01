@@ -67,6 +67,6 @@ public class MyInfo {
         System.out.println("1.Full Name: " + full_name + "\n2.Age: " + age + "\n3.gender: " + gender + "\n4.phone number: " + phone_number +
                 "\n5.address: \n\t\t Buildings Number: " + building_number + " Street:" + streetName + "\n\t\t City: " + city_name +
                 " State: " + state_name + " Zipcode: " + zipCode);
-
+sc.close();
     }
 }
