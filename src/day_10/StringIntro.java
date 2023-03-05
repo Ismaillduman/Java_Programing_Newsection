@@ -37,6 +37,7 @@ public class StringIntro {
         char sixthChar = obst.charAt(5);
 
         System.out.println(firstChar + "" + scndChar + thrdChar + frthChar + fvthtChar + sixthChar);
+        System.out.println("_____________________________________");
         System.out.println(obst);
         System.out.println(obst.trim()); //at the beginning of words blank and at the ending of words blank   delete
 
