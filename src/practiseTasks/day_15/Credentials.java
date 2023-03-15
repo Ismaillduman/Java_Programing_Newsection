@@ -27,10 +27,16 @@ public class Credentials {
         }
 
         while (!(my_username.equals(username) && my_password.equals(password))) {
-            for (int i = 0; i < 2; i++) {
-                System.err.println("Enter your username again");
+            for (int i = 1; i < 3; i++) {
+                if(!(i==2)){
+                    System.err.println("Wrong password or username please re-enter");
+                }else{
+                    System.err.println("That's your last chance");
+                }
+
+                System.out.println("Enter your username again");
                 my_username = sc.next();
-                System.err.println("Enter your password again");
+                System.out.println("Enter your password again");
                 my_password = sc.next();
                 if (my_username.equals(username) && my_password.equals(password)) {
                     System.out.println("Logged in.");
