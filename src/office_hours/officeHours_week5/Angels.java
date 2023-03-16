@@ -1,6 +1,4 @@
-package practiseTasks.officeHours_week5;
-
-import org.w3c.dom.ls.LSOutput;
+package office_hours.officeHours_week5;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package practiseTasks.officeHours_week5;
+package office_hours.officeHours_week5;
 
 public class SearchResults {
     public static void main(String[] args) {
