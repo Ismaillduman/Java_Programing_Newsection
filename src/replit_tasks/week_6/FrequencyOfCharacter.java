@@ -24,9 +24,13 @@ public class FrequencyOfCharacter {
 
             }
 
-            if(!result.contains(""+ch)){
-                result+=frequency+""+ch;
+//            if(!result.contains(""+ch)){
+//                result+=frequency+""+ch;
+//            }
+            if(result.contains(""+ch)){
+               continue;
             }
+            result+=frequency+""+ch;
         }
 
 return result;
