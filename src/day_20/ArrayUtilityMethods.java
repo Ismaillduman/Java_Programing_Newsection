@@ -74,7 +74,14 @@ public class ArrayUtilityMethods {
         System.out.println("-----------------------------------------------------------------------\n");
 
 
+        char[] ch2 = {'Ü', 'M', 'C'};
+        char[] ch3 = {'A', 'C', 'B','F','P','Ü', 'M', 'C'};
 
+        char [] copy=Arrays.copyOf(ch3,9);
+        System.out.println(Arrays.toString(copy));
+
+        char [] result=Arrays.copyOfRange(ch3,3,6);
+        System.out.println(Arrays.toString(result));
 
     }
 }
