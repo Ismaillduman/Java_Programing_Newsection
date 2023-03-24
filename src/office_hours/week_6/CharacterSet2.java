@@ -1,12 +1,13 @@
-package office_hours.officeHours_week_6;
+package office_hours.week_6;
 
-public class CharacterSet {
+public class CharacterSet2 {
     public static void main(String[] args) {
-        System.out.println(characterSet("lowercase"));
+        System.out.println(characterSet('X', '}'));
+        System.out.println(characterSet('1', '9'));
     }
 
     public static String characterSet(String character) {
-        String result = "";
+
         char star = ' ';
         char end = ' ';
 
@@ -37,12 +38,16 @@ public class CharacterSet {
                 return "Invalid group";
 
         }
+return characterSet(star,end);
 
-        for (char i = star; i < end; i++) {
-            result +=i;
-        }
-        return result;
     }
 
+public static String characterSet(char star,char end){
+String result="";
 
+    for (char i = star; i <=end ; i++) {
+        result+=""+i;
+    }
+    return result;
+}
 }

@@ -1,6 +1,4 @@
-package office_hours.officeHours_week_6;
-
-import javax.management.MBeanAttributeInfo;
+package office_hours.week_6;
 
 public class Syllables {
     public static void main(String[] args) {

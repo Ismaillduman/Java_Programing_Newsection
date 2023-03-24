@@ -1,4 +1,4 @@
-package office_hours.officeHours_week_6;
+package office_hours.week_6;
 
 public class Army {
     public static void main(String[] args) {
