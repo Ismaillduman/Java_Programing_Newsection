@@ -16,5 +16,7 @@ public class TestStudent {
         System.out.println(student_1);
 
         student_1.study();
+
+
     }
 }

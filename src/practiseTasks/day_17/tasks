@@ -67,4 +67,5 @@
     Actions:
     	setInfo(): sets all the fields of Item object
         calcCost(): returns the total price of the Item
-        toString(): when a SalaryCalculator object is passed in print statement, it should display the full information of the item object
+        toString(): when a SalaryCalculator object is passed in print statement,
+        it should display the full information of the item object

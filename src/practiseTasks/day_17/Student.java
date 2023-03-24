@@ -1,6 +1,6 @@
 package practiseTasks.day_17;
 
-public class Student {
+ public class Student {
     /*Create a custom class named Student
 		Attributes:
 			name, gender, age, studentId, grade, isFullTime
@@ -18,7 +18,7 @@ public class Student {
     char grade;
     boolean isFullTime;
 
-    public void setInfo(String name, String gender, int age, int studentId, char grade, boolean isFullTime) {
+     void setInfo(String name, String gender, int age, int studentId, char grade, boolean isFullTime) {
         this.name = name;
         this.age = age;
         this.studentId = studentId;
@@ -28,8 +28,8 @@ public class Student {
 
     }
 
-    @Override
-    public String toString() {
+
+     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
                 ", gender='" + gender + '\'' +
@@ -40,9 +40,10 @@ public class Student {
                 '}';
     }
 
-    public  void study(){
-
+      int study(){
+       int n=0;
         System.out.println(name+" study Mathe");
+        return n;
     }
 
 }
