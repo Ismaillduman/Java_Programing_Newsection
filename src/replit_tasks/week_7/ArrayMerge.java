@@ -43,5 +43,6 @@ class Main {
         }
 
         System.out.println(Arrays.toString(merge(nums, nums2)));
+
     }
 }
