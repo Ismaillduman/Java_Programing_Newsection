@@ -12,6 +12,7 @@ public class Months {
         System.out.println("Enter your month number");
         montNum = sc.nextInt();
 
+
         while (!(montNum >0 && montNum < 12)) {
             System.err.println("Please enter a valid month number");
             montNum=sc.nextInt();
@@ -23,7 +24,7 @@ public class Months {
                 System.out.println(months[montNum]);
                 break;
             }
-
+        sc.close();
 
 
     }}
