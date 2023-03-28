@@ -23,11 +23,18 @@ public class IteratingMultiDimensionalArray {
 
         }
 
-        System.out.println("-----------------------------------------\n");
+        System.out.println("-------------for each--------------------------\n");
         for (int[] each_1D : arr2D) {
             System.out.println(Arrays.toString(each_1D));
             for (int eachElement : each_1D) {
                 System.out.println(eachElement);
+            }
+        }
+        System.out.println("--------reverse order--------------------\n");
+
+        for (int i = arr2D.length - 1; i >= 0; i--) {
+            for (int j = arr2D[i].length - 1; j >= 0; j--) { //reverse order
+                System.out.println(arr2D[i][j]);
             }
         }
     }
