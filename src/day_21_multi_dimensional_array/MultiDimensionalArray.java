@@ -18,6 +18,10 @@ public class MultiDimensionalArray {
         System.out.println(arr2d.length); // 3
 
         System.out.println(arr2d[2][3]); // arr3, 43
+        System.out.println(Arrays.toString(arr2d[2])); //arr3 [13, 23, 33, 43, 53, 457]
+        System.out.println(Arrays.toString(arr2d[0])); // arr1 [1, 2, 3, 4, 5]
+        System.out.println(arr2d[1][3]); //arr2 50
+
 
     }
 }
