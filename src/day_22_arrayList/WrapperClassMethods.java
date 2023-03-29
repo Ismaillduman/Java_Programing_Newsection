@@ -51,17 +51,23 @@ public class WrapperClassMethods {
 
         System.out.println("----------------------------------------------\n");
 
-        String string= "a1b2c4d5f8";
+        String string = "a1b2c4d5f8";
 
-        int sum=0;
-        char chr=' ';
-        int number=0;
+        int sum = 0;
+        char chr = ' ';
+        int number = 0;
 
-        for (int i = 0; i <string.length() ; i++) {
-            chr= string.charAt(i);
-            if(Character.isDigit(chr)){
-               number= Integer.parseInt(""+chr);
-               sum=sum+number;
+        for (int i = 0; i < string.length(); i++) {
+            chr = string.charAt(i);
+            if (Character.isDigit(chr)) {
+                number = Integer.parseInt("" + chr);
+                sum = sum + number;
+            }
+        }
+
+        for (char each : string.toCharArray()) {
+            if (Character.isDigit(each)) {
+                sum += Integer.parseInt("" + each);
             }
         }
         System.out.println(sum);
