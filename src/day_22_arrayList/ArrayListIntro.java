@@ -1,5 +1,6 @@
 package day_22_arrayList;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ArrayListIntro {
@@ -12,7 +13,9 @@ Allows us to store objects
 Presented in “java.util” package
 Size is automatically adjusted (has add and remove functions) dynamic
 Does not support primitives
+!!!!!!Data type of the ArrayList can not be a primitive type!!!!
 
+ArrayList<Integer> list= new ArrayList<Integer>();
         * */
         int[] array = new int[5];
 
@@ -25,5 +28,13 @@ Does not support primitives
         // array[5]=20; ArrayIndexOutOfBoundsException
 
         System.out.println(Arrays.toString(array));
+
+        System.out.println("-------------------------------------\n");
+        ArrayList<Integer> list= new ArrayList<>();
+
+        System.out.println(list);
+        System.out.println(list.size());
+
+
     }
 }
