@@ -2,6 +2,12 @@ package day_22_arrayList;
 
 public class WrapperClassIntro {
     public static void main(String[] args) {
+         /*parse method: returns primitive type , converts String to primitive values (int char or boolean)
+        valueOf method: returns wrapper class object, converts String to wrapper class values(Integer, Char , Boolean)
+        if i want to use primitive data type in collection and map i should convert these to wrapper
+        class with valueOf method.
+        * */
+
         String str = "java";
 
         int a = 10;
