@@ -136,15 +136,60 @@ public class ArraysUtility {
 
     public static boolean contains(int[]array, int element){
 
-        for (int num : array) {
-            if(num==element){
+        for (int each : array) {
+            if(each==element){
                 return true;
-            }else{
-                return false;
             }
         }
-return true;
+return false;
+
+    }
+    public static boolean contains(double[]array, double element){
+
+        for (double each : array) {
+            if(each==element){
+                return true;
+            }
+        }
+        return false;
+
+    }
+    public static boolean contains(char[]array, char element){
+
+        for (char each : array) {
+            if(each==element){
+                return true;
+            }
+        }
+        return false;
 
     }
 
+    public static boolean contains(String[]array, String element){
+
+        for (String each : array) {
+            if(each.equals(element)){
+                return true;
+            }
+        }
+        return false;
+
+    }
+
+    //array ={10,20,30};
+    public static int[] remove(int[] array,int index){
+        int[] removeArray=new int[array.length-1];
+        for (int i = 0; i < array.length; i++) {
+
+            if(i==index){
+                continue;
+            }
+            removeArray[i]=array[i];
+
+
+        }
+        return  removeArray;
+    }
+
+//    public static int[] removeDup(int[] array,)
 }
