@@ -64,6 +64,13 @@ public class WrapperClassMethods {
                sum=sum+number;
             }
         }
+
+        for (char each:string.toCharArray())
+        {
+         if(Character.isDigit(each)){
+            sum+= Integer.parseInt(""+each);
+         }
+        }
         System.out.println(sum);
 
 
