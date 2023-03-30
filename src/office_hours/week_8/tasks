@@ -27,7 +27,8 @@ T2BeginningEnd [array, loop, String]
 
 T3ReverseEach [array, loop, String]
 
-    Create a program that will define a String array with some words. Reverse each given element and assign them to a new array for all the reverse words
+    Create a program that will define a String array with some words.
+     Reverse each given element and assign them to a new array for all the reverse words
 
     Ex:
         {can, you, join, the, team} -> [nac, uoy, nioj, eht, meat]
