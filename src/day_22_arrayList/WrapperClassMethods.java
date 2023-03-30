@@ -52,7 +52,6 @@ public class WrapperClassMethods {
         System.out.println("----------------------------------------------\n");
 
         String string = "a1b2c4d5f8";
-
         int sum = 0;
         char chr = ' ';
         int number = 0;
