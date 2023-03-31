@@ -21,5 +21,9 @@ public class UniqueElement {
             }
         }
 
+        boolean hasIbrahim= names.contains("Ibrahim");
+        boolean hasBusra= names.contains("Busra");
+        System.out.println("hasBusra = " + hasBusra);
+        System.out.println("hasIsmail = " + hasIbrahim);
     }
 }
