@@ -38,5 +38,46 @@ public class ArrayListMethodsPractise {
 
         family.add(1,"pamuk"); //not update but shift right
         System.out.println(family);
+
+        family.remove(0);
+        System.out.println(family); // shift left
+
+        System.out.println("-------------------------------");
+
+        ArrayList<Integer> numbers= new ArrayList<>();
+
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(40);
+        numbers.add(50);
+        System.out.println(numbers);
+
+        boolean r1= numbers.remove(Integer.valueOf(10)); //remove with object as parameter:
+        // for that convert the primitive to wrapper class with valueOf() method.
+
+        System.out.println(numbers);
+        System.out.println(r1);
+
+        System.out.println("-----------------------------\n");
+
+        ArrayList<String> familyDuman= new ArrayList<>();
+
+        familyDuman.add("Ismail");
+        familyDuman.add("Yusuf");
+        familyDuman.add("Yusuf");
+        familyDuman.add("Yusuf");
+        familyDuman.add("Zübeyde");
+        familyDuman.add("Zübeyde");
+        familyDuman.add("Zübeyde");
+        familyDuman.add("Busra");
+        familyDuman.add("Busra");
+
+
+        System.out.println(familyDuman.indexOf("Yusuf"));
+        System.out.println(familyDuman.lastIndexOf("Yusuf"));
+        System.out.println(familyDuman.lastIndexOf("Zübeyde"));
+
+
     }
 }
