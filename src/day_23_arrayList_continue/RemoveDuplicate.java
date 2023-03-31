@@ -23,8 +23,9 @@ public class RemoveDuplicate {
             }
             nonDup.add(each);
         }
-        members = nonDup;
-        System.out.println("nonDup = " + members);
+        members = nonDup; //eligible to garbage collection, for that reassigned
+        System.out.println("nonDup Members = " + members);
+       // System.out.println(nonDup);
 
 
     }
