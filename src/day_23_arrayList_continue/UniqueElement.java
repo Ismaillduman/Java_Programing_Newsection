@@ -61,6 +61,12 @@ public class UniqueElement {
         n2.add(20);
 
         System.out.println(n1.equals(n2)); //false order muss be same to equal but firstly i can use sort method..
+        System.out.println(n1.isEmpty());
+        System.out.println(n2.isEmpty());
+        n1.clear();
+        n2.clear();
+        System.out.println(n1.isEmpty());
+        System.out.println(n2.isEmpty());
 
 
 
