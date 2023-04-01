@@ -68,6 +68,22 @@ public class BulkOperations {
 //wenn ich addAll removeAll retainAll containAll methods verwenden möchte , soll ich immer collection type angeben.
 // Dafür soll ich Arrays.asList() methods verwenden.
 
+        System.out.println("---------------retainAll()----------------");
+
+        ArrayList<String> developers = new ArrayList<>();
+        developers.addAll(Arrays.asList("joe", "john", "jane", "jack", "black","rose"));
+        developers.retainAll(Arrays.asList("john","jane")); //ich kann retainAll() verwenden um alles was ich nich angegeben habe zu remove (entfernen) .
+        System.out.println("developers = " + developers);
+
+        System.out.println("-----------------------------");
+        ArrayList<String> groceriesList= new ArrayList<>();
+        groceriesList.addAll(
+                Arrays.asList("Eier","Gurke","Butter","Cherry","Brot","Appel","Eis","Pizza","Möhre")
+        );
+        groceriesList.retainAll(Arrays.asList("Eier","Gurke","Butter"));// entfernt alles welche  ich nicht angegeben habe.
+        System.out.println("groceriesList = " + groceriesList);
+
+
 
 
 
