@@ -57,6 +57,18 @@ public class BulkOperations {
         System.out.println("hasJoeJane = " + hasJoeJane);
         System.out.println("hasJack = " + hasJack);
         System.out.println("hasBusraYusuf = " + hasBusraYusuf);
+        System.out.println("---------------------------------");
+
+        ArrayList<Integer> list= new ArrayList<>();
+
+        list.addAll(Arrays.asList(10,20,30,40,50));
+        System.out.println("list = " + list);
+        list.removeAll(Arrays.asList(10,20,50));
+        System.out.println("list after remove = " + list);
+//wenn ich addAll removeAll retainAll containAll methods verwenden möchte , soll ich immer collection type angeben.
+// Dafür soll ich Arrays.asList() methods verwenden.
+
+
 
 
     }
