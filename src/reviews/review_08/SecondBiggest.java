@@ -6,7 +6,8 @@ import java.util.Arrays;
 public class SecondBiggest {
     public static void main(String[] args) {
         ArrayList<Integer> nums= new ArrayList<>(Arrays.asList(4,8,7,8,8));
-        int max = nums.get(0);
+        //int max = nums.get(0);
+        int max= Integer.MIN_VALUE;
         int secondMax= nums.get(0);
         for(int each:nums){
             if(each>max){
