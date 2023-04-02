@@ -1,12 +1,9 @@
 package day_23_arrayList_continue;
 
-import office_hours.week_8.Array;
-
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
-public class BulkOperations {
+public class BulkAllOperations {
     public static void main(String[] args) {
         ArrayList<Integer> numbers = new ArrayList<>();
         numbers.add(10);
