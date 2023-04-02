@@ -192,4 +192,15 @@ return false;
     }
 
 //    public static int[] removeDup(int[] array,)
+
+    public static String print2D(int[][] arr){
+        String print="*";
+        for(int[] inner:arr){
+            print+="\n\t";
+            for(int each: inner){
+                print+="("+each+")";
+            }
+        }
+        return print;
+    }
 }
