@@ -1,9 +1,6 @@
 package utilities;
 
-import day_22_arrayList.ArrayListIntro;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class ArrayListUtility {
 

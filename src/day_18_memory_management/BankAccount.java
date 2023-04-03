@@ -1,4 +1,4 @@
-package day_18;
+package day_18_memory_management;
 
 public class BankAccount {
     /*Create a custom class named BankAccount:

@@ -1,6 +1,4 @@
-package day_19;
-
-import day_10_scanner_string.StringIntro;
+package day_19_arrays_intro;
 
 import java.util.Arrays;
 

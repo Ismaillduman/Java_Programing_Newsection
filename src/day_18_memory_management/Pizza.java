@@ -1,4 +1,4 @@
-package day_18;
+package day_18_memory_management;
 
 public class Pizza {
     /* Create a class named Pizza:

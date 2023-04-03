@@ -1,6 +1,4 @@
-package day_22_arrayList;
-
-import java.nio.charset.CharsetEncoder;
+package day_22_wrapper_class_arrayList;
 
 public class WrapperClassMethods {
     public static void main(String[] args) {

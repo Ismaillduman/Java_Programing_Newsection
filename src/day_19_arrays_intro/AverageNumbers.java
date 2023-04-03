@@ -1,4 +1,4 @@
-package day_19;
+package day_19_arrays_intro;
 
 import java.text.DecimalFormat;
 import java.util.Arrays;

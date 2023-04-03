@@ -1,6 +1,5 @@
-package day_20;
+package day_20_arrays_continue_forEach;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class MultiplyOddNum {
