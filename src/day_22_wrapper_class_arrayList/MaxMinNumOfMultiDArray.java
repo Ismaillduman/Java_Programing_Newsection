@@ -1,4 +1,4 @@
-package day_22_arrayList;
+package day_22_wrapper_class_arrayList;
 
 public class MaxMinNumOfMultiDArray {
     public static void main(String[] args) {

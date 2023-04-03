@@ -1,6 +1,4 @@
-package day_19;
-
-import java.util.Arrays;
+package day_19_arrays_intro;
 
 public class MaxMinNum {
 

@@ -1,4 +1,4 @@
-package day_18;
+package day_18_memory_management;
 
 public class TestBankAccount {
     public static void main(String[] args) {
