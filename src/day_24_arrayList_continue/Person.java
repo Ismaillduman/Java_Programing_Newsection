@@ -9,7 +9,7 @@ public class Person {
     public char gender;
     public LocalDate birthDate;
 
-    public void setInfo(String name, int age, char gender, LocalDate birthDate) {
+    public void setInfo(String name,  char gender, LocalDate birthDate) {
         this.name = name;
         age = LocalDate.now().getYear() - birthDate.getYear();
         this.gender = gender;
