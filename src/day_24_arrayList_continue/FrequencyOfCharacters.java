@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+
 public class FrequencyOfCharacters {
     public static void main(String[] args) {
         String str= "aaassssdddd";
