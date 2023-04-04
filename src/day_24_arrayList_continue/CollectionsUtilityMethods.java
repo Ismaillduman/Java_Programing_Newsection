@@ -27,5 +27,14 @@ public class CollectionsUtilityMethods {
         int count= Collections.frequency(list,2);
         System.out.println(count);
 
+        System.out.println("------------------------------------");
+        ArrayList<Integer> numbers= new ArrayList<>();
+        numbers.addAll(Arrays.asList(1,2,3,4,5,6,7,8,9,2,2,2,4,5,1,1,6,8,9,9));
+        for (Integer each : numbers) {
+            if(Collections.frequency(numbers,each)==1){
+                System.out.println(each);
+            }
+        }
+
     }
 }
