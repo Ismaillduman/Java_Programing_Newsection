@@ -37,5 +37,19 @@ public class ArrayListPractice {
         }
         System.out.println(max);
         System.out.println(min);
+
+        System.out.println("-----------------------");
+        ArrayList<Employee> femaleEmployees= new ArrayList<>();
+        ArrayList<Employee> maleEmployees= new ArrayList<>();
+
+        for (Employee each : employees) {
+            if(each.gender=='M'){
+                maleEmployees.add(each);
+            }else{
+                femaleEmployees.add(each);
+            }
+        }
+        System.out.println("Total number of female employees: "+femaleEmployees.size());
+        System.out.println("Total number of male employees: "+maleEmployees.size());
     }
 }
