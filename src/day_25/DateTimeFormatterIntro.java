@@ -21,5 +21,9 @@ public class DateTimeFormatterIntro {
         LocalDateTime starts= LocalDateTime.now();
         System.out.println(starts.format(dtf));
 
+        DateTimeFormatter dtf2= DateTimeFormatter.ofPattern("EEEE, hh:mm a, MMM/dd/y");
+        LocalDateTime task= LocalDateTime.of(2020,11,24,13,0,0);
+        System.out.println(task.format(dtf2));
+
     }
 }
