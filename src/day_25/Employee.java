@@ -1,6 +1,7 @@
 package day_25;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Employee {
     public String name,jobTitle;
@@ -16,7 +17,7 @@ public class Employee {
         this.salary = salary;
         this.gender = gender;
         this.hiredDate = hiredDate;
-    }
+    } //allow us to set all the instance variables of the object as soon as tje object created
 
     @Override
     public String toString() {
@@ -26,7 +27,7 @@ public class Employee {
                 ", age=" + age +
                 ", salary=" + salary +
                 ", gender=" + gender +
-                ", hiredDate=" + hiredDate +
+                ", hiredDate=" + hiredDate.format(DateTimeFormatter.ofPattern("MMMM/dd/yy")) +
                 '}';
-    }
+    }// allow us to print the object
 }
