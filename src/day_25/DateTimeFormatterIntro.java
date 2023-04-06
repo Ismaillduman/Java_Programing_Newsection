@@ -6,6 +6,8 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 public class DateTimeFormatterIntro {
+
+
     public static void main(String[] args) {
         DateTimeFormatter df= DateTimeFormatter.ofPattern("EEEE, MMMM/dd/yy");
         LocalDate today= LocalDate.now();
@@ -24,6 +26,7 @@ public class DateTimeFormatterIntro {
         DateTimeFormatter dtf2= DateTimeFormatter.ofPattern("EEEE, hh:mm a, MMM/dd/y");
         LocalDateTime task= LocalDateTime.of(2020,11,24,13,0,0);
         System.out.println(task.format(dtf2));
+
 
     }
 }
