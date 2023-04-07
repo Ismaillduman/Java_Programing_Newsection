@@ -1,6 +1,7 @@
 package day_26_statics.studentTask;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class StudentsGroup {
     public String groupName;
@@ -20,6 +21,10 @@ public class StudentsGroup {
         //Student student= new Student(name,id,age,gender);
         students.add(new Student(name,id,age,gender));
 
+    }
+
+    public void addStudent(Student[] students){
+        this.students.addAll(Arrays.asList(students));
     }
     public void removeStudent(String id){
         students.removeIf(p->p.id.equals(id));
