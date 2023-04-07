@@ -11,7 +11,7 @@ public class Movie {
     public ArrayList<String> casts;
 
     public Movie(String country, String title, String director, String genre, LocalDate releaseDate) {
-        casts= new ArrayList<>();
+       casts= new ArrayList<>();
         this.country = country;
         this.title = title;
         this.director = director;
@@ -20,13 +20,12 @@ public class Movie {
 
     }
 
-    public void addCast(String name){
+   public void addCast(String name){
         casts.add(name);
-
-    }
-    public void addCasts(String[] names){
-casts.addAll(Arrays.asList(names));
-    }
+   }
+   public void addCasts(String[] names){
+        casts.addAll(Arrays.asList(names));
+   }
 
 
     public String toString() {
