@@ -24,4 +24,13 @@ public class StudentsGroup {
     public void removeStudent(String id){
         students.removeIf(p->p.id.equals(id));
     }
+
+    @Override
+    public String toString() {
+        return "StudentsGroup{" +
+                "groupName='" + groupName + '\'' +
+                ", groupId=" + groupId +
+                ", number of students=" + students.size() +
+                '}';
+    }
 }
