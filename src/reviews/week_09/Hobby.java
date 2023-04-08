@@ -22,12 +22,12 @@ public class Hobby {
     }
 
     public void doIt(){
-        System.out.println("Doing "+name+(isOutdoors? "outside":"inside"));
+        System.out.println("Doing "+name+(isOutdoors? " outside":" inside"));
     }
 
 
     public String toString() {
-        return "Hobby{" +
+        return "\nHobby{" +
                 "name='" + name + '\'' +
                 ", annualCost=" + annualCost +
                 ", isOutdoors=" + isOutdoors +
