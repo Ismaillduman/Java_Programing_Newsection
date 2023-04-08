@@ -1,6 +1,7 @@
 package reviews.week_09;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -31,9 +32,12 @@ public class Holidays {
         Scanner sc= new Scanner(System.in);
         System.out.println("Which month do you want to check the dates for? num");
         int inputMonth=sc.nextInt();
+       // DateTimeFormatter dtf= DateTimeFormatter.ofPattern("MM - dd, yy");
         for(LocalDate each:getHolidays()){
             if(each.getMonthValue()==inputMonth){
-                System.out.println(each);
+                System.out.println(each.format(DateTimeFormatter.ofPattern("MMM - d, yyyy")));
+                System.out.println(each.format(DateTimeFormatter.ofPattern("MMMM - d, yy")));
+                System.out.println(each.format(DateTimeFormatter.ofPattern("MM - d, yy")));
             }
         }
     }
