@@ -27,15 +27,22 @@ public class TestHobby {
             each.doIt();
         }
         System.out.println("--------------------------------------------");
+
         ArrayList<Hobby> outdoors = new ArrayList<>(hobbies);
         ArrayList<Hobby> requireOthers = new ArrayList<>(hobbies);
         ArrayList<Hobby> highCost = new ArrayList<>(hobbies);
-        outdoors.removeIf(p-> !p.isOutdoors);
-        requireOthers.removeIf(p->p.requiresOthers);
-        highCost.removeIf(p->p.annualCost>400);
+
+        outdoors.removeIf(p -> !p.isOutdoors);
+        requireOthers.removeIf(p -> p.requiresOthers);
+        highCost.removeIf(p -> p.annualCost > 400);
+
         System.out.println(outdoors);
         System.out.println(requireOthers);
         System.out.println(highCost);
+
+        ArrayList<Hobby> lessThan200Indoors = new ArrayList<>(hobbies);
+        lessThan200Indoors.removeIf(p -> p.annualCost > 200 || p.isOutdoors);
+        System.out.println(lessThan200Indoors);
 
     }
 
