@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Holidays {
-    public static ArrayList<LocalDate> getHolidays(){
+    public static ArrayList<LocalDate> getHolidays() {
 
         ArrayList<LocalDate> holidays = new ArrayList<>(Arrays.asList(
                 LocalDate.of(2023, 1, 1),
@@ -29,12 +29,12 @@ public class Holidays {
     }
 
     public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Which month do you want to check the dates for? num");
-        int inputMonth=sc.nextInt();
-       // DateTimeFormatter dtf= DateTimeFormatter.ofPattern("MM - dd, yy");
-        for(LocalDate each:getHolidays()){
-            if(each.getMonthValue()==inputMonth){
+        int inputMonth = sc.nextInt();
+        // DateTimeFormatter dtf= DateTimeFormatter.ofPattern("MM - dd, yy");
+        for (LocalDate each : getHolidays()) {
+            if (each.getMonthValue() == inputMonth) {
                 System.out.println(each.format(DateTimeFormatter.ofPattern("MMM - d, yyyy")));
                 System.out.println(each.format(DateTimeFormatter.ofPattern("MMMM - d, yy")));
                 System.out.println(each.format(DateTimeFormatter.ofPattern("MM - d, yy")));
