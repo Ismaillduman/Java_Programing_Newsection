@@ -29,6 +29,8 @@ public class TestObject {
 
         StudentsGroup[] groups= {studentsGroup1,studentsGroup2,studentsGroup3,studentsGroup4};
 
+
+
         System.out.println(Arrays.toString(groups));
 
 
