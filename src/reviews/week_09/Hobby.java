@@ -20,4 +20,19 @@ public class Hobby {
         this.isOutdoors = isOutdoors;
         this.requiresOthers = requiresOthers;
     }
+
+    public void doIt(){
+        System.out.println("Doing "+name+(isOutdoors? "outside":"inside"));
+    }
+
+
+    public String toString() {
+        return "Hobby{" +
+                "name='" + name + '\'' +
+                ", annualCost=" + annualCost +
+                ", isOutdoors=" + isOutdoors +
+                ", requiresOthers=" + requiresOthers +
+                '}';
+    }
+
 }
