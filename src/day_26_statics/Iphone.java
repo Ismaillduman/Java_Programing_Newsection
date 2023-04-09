@@ -58,9 +58,5 @@ But we should avoid this because it becomes difficult to figure out if it’s an
                 '}';
     }
 
-    public static void main(String[] args) {
-        Iphone.printOperatingSystem();
-        Iphone iphone= new Iphone("IPhone 13","black",850);
-        System.out.println(iphone);
-    }
+
 }
