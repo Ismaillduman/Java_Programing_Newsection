@@ -41,6 +41,7 @@ But we should avoid this because it becomes difficult to figure out if it’s an
     }
     public  static  void printOperatingSystem(){
         System.out.println("os = " + os);
+
         //if the method is static , it's not need the object. that's the benefit of static method.
         // so that we can call just the with class name
     }
