@@ -1,45 +1,12 @@
 package practiseTasks.day_25;
 
+import org.w3c.dom.ls.LSOutput;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class MyOffers {
-    public String location,companyName,jobTitle;
-    public double salary;
-    public boolean hasBenefit,hasPTO,isWHF,isFullTime;
-
-    public MyOffers(String location, String companyName, String jobTitle, double salary, boolean hasBenefit, boolean hasPTO, boolean isWHF, boolean isFullTime) {
-        this.location = location;
-        this.companyName = companyName;
-        this.jobTitle = jobTitle;
-        this.salary = salary;
-        this.hasBenefit = hasBenefit;
-        this.hasPTO = hasPTO;
-        this.isWHF = isWHF;
-        this.isFullTime = isFullTime;
-    }
-
-
-    public String toString() {
-        return "MyOffers{" +
-                "location='" + location + '\'' +
-                ", companyName='" + companyName + '\'' +
-                ", jobTitle='" + jobTitle + '\'' +
-                ", salary=" + salary +
-                ", hasBenefit=" + hasBenefit +
-                ", hasPTO=" + hasPTO +
-                ", isWHF=" + isWHF +
-                ", isFullTime=" + isFullTime +
-                '}';
-    }
-    /*Task05:
-    Create a custom class named Offer
-            Attributes:
-                    location, companyName, jobTitle, salary, hasBenefit, hasPTO, isWFH, isFullTime
-
-                Add a constructor that can set all the fields
-
-            Actions:
-                toString(): returns the full info of the Offer Object
-
-    2. Create a class named MyOffers:
+    /*Create a class named MyOffers:
 
             2.1 Create 7 objects of Offer
             2.2 Create an array of Offers named myOffers and store all 7 objects of offers
@@ -54,4 +21,22 @@ public class MyOffers {
 
             2.7 Create an ArrayList of Offer named offers With100K and add all the offer objects.
                     2.7.1 Write a program that can remove all the offers that are offering less than 100K salary*/
+    public static void main(String[] args) {
+        Offer offer1= new Offer("Köln","beQualified","sdet",50000,true,true,true,true);
+        Offer offer2= new Offer("Frankfurt","beQualified","QA",45000,false,true,true,false);
+        Offer offer3= new Offer("Stutgart","beQualified","sdet",55000,true,true,true,true);
+        Offer offer4= new Offer("Berlin","beQualified","QA",60000,true,true,false,true);
+        Offer offer5= new Offer("Virginia","beQualified","Developer",70000,true,false,true,true);
+        Offer offer6= new Offer("Hamburg","beQualified","SDET",63000,true,true,false,false);
+        Offer offer7= new Offer("Bremen","beQualified","Designer",45700,false,false,false,false);
+        Offer[] fullTimeOffers={offer1,offer2,offer3,offer4,offer5,offer6,offer7};
+        ArrayList<Offer> arraylistOffer= new ArrayList<>();
+        arraylistOffer.addAll(Arrays.asList(fullTimeOffers));
+        arraylistOffer.removeIf(p->!p.isFullTime);
+        System.out.println(arraylistOffer);
+    }
+
+
+
+
 }
