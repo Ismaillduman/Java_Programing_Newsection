@@ -1,4 +1,5 @@
 package utilities;
+import day_27_access_modifiers.AccessModifier;
 import day_27_access_modifiers.Data;
 import static day_27_access_modifiers.Data.*;
 public class Test {
@@ -17,5 +18,15 @@ public class Test {
 
         obj.method1();
         obj.method2();
+
+        System.out.println("----------------------------------------");
+        System.out.println(AccessModifier.publicData); //public ist immer von anderen Paket  zugänglich
+        //System.out.println(AccessModifier.protectedData); protected ist nicht immer von anderen paket  zugänglich,aber manchmal kann sein
+        //System.out.println(AccessModifier.defaultdata); //default ist nicht von anderen paket zugänglich, unmöglich
+       // System.out.println(AccessModifier.privateData);//private ist nicht von anderen paket zugänglich. unmöglich
+AccessModifier.publicMethod();
+//AccessModifier.protectedMethod();//protected ist nicht immer von anderen paket  zugänglich,aber manchmal kann sein
+//AccessModifier.defaultMethod();//default ist nicht von anderen paket zugänglich, unmöglich
+//AccessModifier.privateMethod();//private ist nicht von anderen paket zugänglich. unmöglich
     }
 }
