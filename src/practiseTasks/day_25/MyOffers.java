@@ -34,6 +34,11 @@ public class MyOffers {
         arraylistOffer.addAll(Arrays.asList(fullTimeOffers));
         arraylistOffer.removeIf(p->!p.isFullTime);
         System.out.println(arraylistOffer);
+        ArrayList<Offer> with100K= new ArrayList<>(Arrays.asList(offer1,offer2,offer3,offer4,offer5,offer6,offer7));
+        with100K.removeIf(p->p.salary<50000);
+        System.out.println(with100K);
+
+
     }
 
 
