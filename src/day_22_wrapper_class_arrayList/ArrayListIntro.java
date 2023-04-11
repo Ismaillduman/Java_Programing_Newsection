@@ -33,6 +33,7 @@ ArrayList<Integer> list= new ArrayList<Integer>();
         ArrayList<Integer> list= new ArrayList<>();
 
         System.out.println(list);
+
         System.out.println(list.size());
 
 
