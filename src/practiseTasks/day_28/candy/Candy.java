@@ -1,21 +1,6 @@
 package practiseTasks.day_28.candy;
 
 public class Candy {
-    /*Create a custom class named Candy
-        private variables:
-            brand (String), quantity (int), price (double), hasPeanuts (boolean)
-
-        Encapsulate All the private fields
-                (price of candy can not be set to negative)
-                (quantity of candy can not be set to zero or negative)
-
-        Add a constructor that allows user to set all the fields when the object is created.
-                (If the arguments not valid it should not be set to the instances)
-
-        Extra methods:
-            toString():
-                if the price is zero, print "free" instead of 0
-*/
     private String brand;
     private int quantity;
     private double price;
@@ -23,8 +8,8 @@ public class Candy {
 
     public Candy(String brand, int quantity, double price, boolean hasPeanuts) {
         this.brand = brand;
-       setQuantity(quantity);
-       setPrice(price);
+        setQuantity(quantity);
+        setPrice(price);
         this.hasPeanuts = hasPeanuts;
     }
 
@@ -48,11 +33,14 @@ public class Candy {
         this.quantity = quantity;
     }
 
-    public double getPrice() {
-        if(price==0){
-            System.out.println("free");
+    public String getPrice() {
+
+        if (price == 0) {
+            return "free";
+        } else {
+            return String.valueOf(price);
         }
-        return price;
+
     }
 
     public void setPrice(double price) {
@@ -69,5 +57,13 @@ public class Candy {
 
     public void setHasPeanuts(boolean hasPeanuts) {
         this.hasPeanuts = hasPeanuts;
+    }
+    public String toString() {
+        return "Candy{" +
+                "brand='" + brand + '\'' +
+                ", quantity=" + getQuantity() +
+                ", price=" + getPrice() +
+                ", hasPeanuts=" + hasPeanuts +
+                '}';
     }
 }
