@@ -1,28 +1,14 @@
 package practiseTasks.day_27;
 
 public class Person {
-    /*Create a class named Person:
-            Variables:
-                name, age, gender, language, planet, isHuman, hasNose, numberOfWings, numberOfHead
 
-            Add a constructor to initialize all the fields
-
-            Add a static block to initialize all the statics
-
-            Methods:
-                printPlanetName()
-                eat(String food)
-                drink(String drink)
-                toString()*/
     public String name, language;
     public int age;
     public char gender;
 
     public static String planet;
-    public static boolean isHuman;
-    public static boolean hasNose;
-    public static int numberOfWings;
-    public static int numberOfHead;
+    public static boolean isHuman, hasNose;
+    public static int numberOfWings, numberOfHead;
 
     static {
         planet = "world";
@@ -32,43 +18,56 @@ public class Person {
         numberOfWings = 0;
     }
 
-    public Person(String name, String language, int age, char gender) {
+    public Person(String name) {
         this.name = name;
-        this.language = language;
+    }
+
+    public Person(String name, int age) {
+        this(name);
         this.age = age;
+    }
+
+    public Person(String name, char gender) {
+        this(name);
         this.gender = gender;
     }
 
-    /* printPlanetName()
-                eat(String food)
-                drink(String drink)
-                toString()*/
+    public Person(String name, String language, int age) {
+        this(name, age);
+        this.language = language;
+
+    }
+
+
+    public Person(String name, String language, int age, char gender) {
+        this(name, language, age);
+        this.gender = gender;
+    }
+
+    public static void printPlanetName() {
+        System.out.println("Planet is the " + planet);
+    }
+
     public void eat(String food) {
         System.out.println(name + " is eating " + food);
     }
-    public  void drink(String drinking){
-        System.out.println(name+" is drinking "+drinking);
+
+    public void drink(String drinking) {
+        System.out.println(name + " is drinking " + drinking);
     }
 
-    @Override
     public String toString() {
-        return "Person{" +
+        return "\nPerson{" +
                 "name='" + name + '\'' +
                 ", language='" + language + '\'' +
                 ", age=" + age +
-                ", gender=" + gender +" "+name+
-                ", is HUman=" + isHuman +
+                ", gender=" + gender + " " + name +
+                ", is Human=" + isHuman +
                 ", living=" + planet +
                 ", has nose=" + hasNose +
                 ", number Of Head=" + numberOfHead +
                 '}';
     }
 
-    public static void main(String[] args) {
-        Person person= new Person("Maria","English",56,'F');
-        System.out.println(person);
-        person.drink("water");
-        person.eat("Hamburger");
 
-    }
 }
