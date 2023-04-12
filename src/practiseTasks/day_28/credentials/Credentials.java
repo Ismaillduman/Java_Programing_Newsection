@@ -1,5 +1,8 @@
 package practiseTasks.day_28.credentials;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Credentials {
     /*5. create a class named Credentials
             Variables:
@@ -17,13 +20,10 @@ public class Credentials {
 
                 returns boolean
                             Characteristics of strong passwords are:
-                                    1. Password MUST be at least have 8 characters long, and should not contain space
-                                    2. PassWord should at least contain one letter
-                                    3. Password should at least contain one special characters
-                                    4. Password should at least contain a digit
+
 
                 toString()*/
-    private String userName,password;
+    private String userName, password;
 
     public Credentials(String userName, String password) {
         this.userName = userName;
@@ -43,15 +43,39 @@ public class Credentials {
     }
 
     public void setPassword(String password) {
-        for (char each:password.toCharArray()) {
 
-            if(!Character.isDigit(each)||!Character.isLetter(each)||!Character.isLetterOrDigit(each)||Character.isSpaceChar(each)){
-                System.err.println("Password is not strong");
-                System.exit(1);
-            }
-
-        }
         this.password = password;
+    }
+
+    public boolean isStrongPassWord(String password) {
+        /* 1. Password MUST be at least have 8 characters long, and should not contain space
+                                    2. PassWord should at least contain one letter
+                                    3. Password should at least contain one special characters
+                                    4. Password should at least contain a digit*/
+        String[] passwordArray = password.split("");
+        int letter = 0;
+        int digit = 0;
+        int specialCharacters = 0;
+        int space = 0;
+        for (char each : password.toCharArray()) {
+            if (Character.isDigit(each)) {
+                digit++;
+            }
+            if (Character.isLetter(each)) {
+                letter++;
+            }
+            if (!Character.isLetterOrDigit(each)) {
+                specialCharacters++;
+            }
+            if (Character.isSpaceChar(each)) {
+                space++;
+            }
+        }
+        if (passwordArray.length == 7 && digit > 0 && letter > 0 && specialCharacters > 0 && space == 0) {
+            return true;
+        }
+        return false;
+
     }
 
 
@@ -59,6 +83,7 @@ public class Credentials {
         return "Credentials{" +
                 "userName='" + userName + '\'' +
                 ", password='" + getPassword() + '\'' +
+                ", password is strong='" + isStrongPassWord(password) + '\'' +
                 '}';
     }
 }
