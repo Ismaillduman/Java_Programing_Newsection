@@ -1,4 +1,6 @@
-package practiseTasks.day_28;
+package practiseTasks.day_28.circle;
+
+import practiseTasks.day_28.circle.Circle;
 
 public class CircleTestObj {
     public static void main(String[] args) {
