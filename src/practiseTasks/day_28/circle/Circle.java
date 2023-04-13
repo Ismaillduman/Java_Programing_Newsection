@@ -1,4 +1,4 @@
-package practiseTasks.day_28;
+package practiseTasks.day_28.circle;
 
 public class Circle {
     /* private variables:
