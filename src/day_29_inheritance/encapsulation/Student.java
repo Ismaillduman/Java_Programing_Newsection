@@ -2,9 +2,9 @@ package day_29_inheritance.encapsulation;
 
 public class Student {
     private String name;
-    private static String schoolName;
-    private int age,grade;
-    private char gender;
+    private  String schoolName;
+    private int age;
+    private char gender,grade;
 
     public  String getName(){
 //        if(name==null){
@@ -21,12 +21,12 @@ public class Student {
     }
 
 
-    public static String getSchoolName() {
+    public String getSchoolName() {
         return schoolName;
     }
 
-    public static void setSchoolName(String schoolName) {
-        Student.schoolName = schoolName;
+    public void setSchoolName(String schoolName) {
+        this.schoolName = schoolName;
     }
 
     public int getAge() {
@@ -41,12 +41,30 @@ public class Student {
         this.age = age;
     }
 
-    public int getGrade() {
+    public char getGrade() {
         return grade;
     }
 
-    public void setGrade(int grade) {
-        this.grade = grade;
+    public Student(String name, String schoolName, int age, char gender, char grade) {
+       setName(name);
+       setGrade(grade);
+       setAge(age);
+       setGender(gender);
+       setSchoolName(schoolName);
+
+    }
+
+
+    public void setGrade(char grade) {
+        boolean isValid=grade=='A'||grade=='B'||grade=='C'||grade=='D'||grade=='F';
+        if(isValid){
+        this.grade = grade;}
+        else{
+            System.err.println("invalid grade: "+grade);
+            System.exit(1);
+        }
+
+
     }
 
     public char getGender() {
@@ -54,6 +72,26 @@ public class Student {
     }
 
     public void setGender(char gender) {
-        this.gender = gender;
+        if(gender=='M'||gender=='F'){
+            this.gender = gender;
+        }else{
+            System.err.println("invalid gender: "+gender);
+            System.exit(1);
+        }
+
+    }
+
+    public void study(){
+        System.out.println(name+" is studying at the "+schoolName);
+    }
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", schoolName='" + schoolName + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                ", grade=" + grade +
+
+                '}';
     }
 }
