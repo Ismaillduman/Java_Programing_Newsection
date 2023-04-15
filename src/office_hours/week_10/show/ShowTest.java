@@ -39,5 +39,7 @@ public class ShowTest {
         account.trackedShows.add(familyFeud);
         System.out.println("--------------------------------------");
         System.out.println(account.filter("french"));
+        System.out.println("---------------------------------------------------");
+        System.out.println(account.filter(true));
     }
 }
