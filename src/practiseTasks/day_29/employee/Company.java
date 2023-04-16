@@ -9,5 +9,10 @@ public class Company {
         developer.coding();
         developer.working();
         System.out.println(developer);
+        Driver driver= new Driver();
+        driver.setInfo("Carl","sdf125","taxi driver",45,25000,'M');
+        System.out.println(driver);
+
+
     }
 }

@@ -11,6 +11,7 @@ public class Phone {
         setModel(model);
         setColor(color);
         setSize(size);
+        setPrice(price);
 
     }
 
