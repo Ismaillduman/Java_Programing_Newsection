@@ -19,9 +19,7 @@ public class Tester extends Employee {
 				toString(): prints tester object info when the object is passed in the print statement*/
 
 
-    public Tester(String name, String id, String jobTitle, int age, double salary, char gender) {
-       setInfo(name,id,jobTitle,age,salary,gender);
-    }
+
 
 
 
