@@ -15,26 +15,50 @@ public class Phone {
     }
 
     public String getBrand() {
+        if(brand==null){
+            System.err.println("brand can not be null");
+            System.exit(1);
+        }
         return brand;
     }
 
     public void setBrand(String brand) {
+        if(brand.isEmpty()||brand.isBlank()){
+            System.err.println("brand can not be null/empty/blank");
+            System.exit(1);
+        }
         this.brand = brand;
     }
 
     public String getModel() {
+        if(model==null){
+            System.err.println("model can not be null");
+            System.exit(1);
+        }
         return model;
     }
 
     public void setModel(String model) {
+        if(model.isEmpty()||model.isBlank()){
+            System.err.println("model can not be null/empty/blank");
+            System.exit(1);
+        }
         this.model = model;
     }
 
     public String getColor() {
+        if(color==null){
+            System.err.println("color can not be null");
+            System.exit(1);
+        }
         return color;
     }
 
     public void setColor(String color) {
+        if(model.isEmpty()||model.isBlank()){
+            System.err.println("color can not be null/empty/blank");
+            System.exit(1);
+        }
         this.color = color;
     }
 
@@ -51,9 +75,18 @@ public class Phone {
     }
 
     public void setPrice(int price) {
+        if(price<0){
+            System.err.println("price is not be negative: "+price);
+            System.exit(1);
+        }
         this.price = price;
     }
-
+public void call(long phoneNumber){
+    System.out.println(brand+phoneNumber+" is calling");
+}
+public void text(long phoneNumber){
+    System.out.println(brand+phoneNumber+" is writing");
+}
 
     public String toString() {
         return getClass().getSimpleName() +
