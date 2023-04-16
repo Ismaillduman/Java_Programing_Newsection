@@ -60,6 +60,7 @@ public class Book {
        setGenre(genre);
        setHasMovie(hasMovie);
        setNumOfPages(numOfPages);
+       setTitle(title);
 
     }
 

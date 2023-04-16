@@ -1,14 +1,12 @@
 package reviews.week_10.book;
 
 public class Ebook extends Book {
-    /*- size (double) (mb)
-			- on kindle (boolean)
 
-		create a open method*/
     private double size;
     private boolean onKindle;
 
-    public void setInfo(double size, boolean onKindle) {
+    public void setInfo(String title, String author, String genre, int chapter, int numOfPages, boolean hasMovie,double size, boolean onKindle) {
+        setInfo(title,author,genre,chapter,numOfPages,hasMovie);
         setSize(size);
         setOnKindle(onKindle);
 
@@ -33,10 +31,5 @@ public class Ebook extends Book {
     public void open(){
         System.out.println("check your kindel is open");
     }
-    public String toString() {
-        return getClass().getSimpleName() +
-                " size=" + size +
-                ", onKindle=" + onKindle +
-                '}';
-    }
+
 }
