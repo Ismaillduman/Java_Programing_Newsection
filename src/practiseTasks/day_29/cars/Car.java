@@ -42,7 +42,13 @@ public class Car {
     }
 
     public void setYear(int year) {
-        this.year = year;
+        if(!(year<=0)){
+            this.year = year;
+        }else{
+            System.err.println("year can not be zero or negative");
+            System.exit(1);
+        }
+
     }
 
     public double getPrice() {
@@ -50,10 +56,16 @@ public class Car {
     }
 
     public void setPrice(double price) {
-        this.price = price;
+        if(!(price <=0)){
+            this.price = price;
+        }else{
+            System.err.println("price can not be zero or negative");
+            System.exit(1);
+        }
+
     }
 
-    @Override
+
     public String toString() {
         return getClass().getSimpleName() +
                 " make='" + make + '\'' +
