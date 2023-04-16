@@ -29,6 +29,9 @@ public class TrafficLight {
 
         if (color.equalsIgnoreCase("green") || color.equalsIgnoreCase("red") || color.equalsIgnoreCase("yellow")) {
             this.color = color;
+        }else{
+            System.out.println("invalid color: "+color);
+            System.exit(-1);
         }
 
     }

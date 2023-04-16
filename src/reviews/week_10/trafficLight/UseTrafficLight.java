@@ -9,5 +9,7 @@ public class UseTrafficLight {
         System.out.println(light.getColor());
         System.out.println(new TrafficLight("hello").getColor());
 
+
+
     }
 }
