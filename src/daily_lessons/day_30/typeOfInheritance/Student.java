@@ -1,12 +1,12 @@
 package daily_lessons.day_30.typeOfInheritance;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class Student extends Person {
      private char grade;
      private  String id;
 
-    public Student(String name, int age, char gender, LocalDateTime DOB, char grade, String id) {
+    public Student(String name, int age, char gender, LocalDate DOB, char grade, String id) {
         super(name, age, gender, DOB);
         setGrade(grade);
         setId(id);

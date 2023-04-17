@@ -1,20 +1,20 @@
 package daily_lessons.day_30.typeOfInheritance;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class President extends Person {
-    private LocalDateTime electedDate;
+    private LocalDate electedDate;
 
-    public President(String name, int age, char gender, LocalDateTime DOB, LocalDateTime electedDate) {
+    public President(String name, int age, char gender, LocalDate DOB, LocalDate electedDate) {
         super(name, age, gender, DOB);
         setElectedDate(electedDate);
     }
 
-    public LocalDateTime getElectedDate() {
+    public LocalDate getElectedDate() {
         return electedDate;
     }
 
-    public void setElectedDate(LocalDateTime electedDate) {
+    public void setElectedDate(LocalDate electedDate) {
         this.electedDate = electedDate;
     }
 

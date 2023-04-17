@@ -1,15 +1,15 @@
 package daily_lessons.day_30.typeOfInheritance;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class Person {
     private String name;
     private int age;
     private  char gender;
-    private LocalDateTime DOB;
+    private LocalDate DOB;
 
-    public Person(String name, int age, char gender, LocalDateTime DOB) {
-       setAge(LocalDateTime.now().getYear()-DOB.getYear());
+    public Person(String name, int age, char gender, LocalDate DOB) {
+       setAge(LocalDate.now().getYear()-DOB.getYear());
        setName(name);
        setDOB(DOB);
        setGender(gender);
@@ -45,11 +45,11 @@ public class Person {
         this.gender = gender;
     }
 
-    public LocalDateTime getDOB() {
+    public LocalDate getDOB() {
         return DOB;
     }
 
-    public void setDOB(LocalDateTime DOB) {
+    public void setDOB(LocalDate DOB) {
         this.DOB = DOB;
     }
 
