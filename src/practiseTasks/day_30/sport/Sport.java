@@ -52,7 +52,7 @@ public class Sport {
     }
 
     public void play(){
-        System.out.println(name+" is playing");
+        System.out.println(name+" is playing with "+numberOfPlayers+" players");
     }
 
     @Override

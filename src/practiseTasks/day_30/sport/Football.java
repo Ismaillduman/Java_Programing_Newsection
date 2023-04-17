@@ -18,7 +18,7 @@ public class Football extends Sport {
 
     public void bestScorer(){
         if(numOfGoals>73){
-            System.out.println(getName()+" is best scorer in the world");
+            System.out.println(getName()+"best score is "+numOfGoals+" in the world");
         }
     }
 }
