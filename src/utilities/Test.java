@@ -1,7 +1,7 @@
 package utilities;
-import day_27_access_modifiers.AccessModifier;
-import day_27_access_modifiers.Data;
-import static day_27_access_modifiers.Data.*;
+import daily_lessons.day_27_access_modifiers.AccessModifier;
+import daily_lessons.day_27_access_modifiers.Data;
+
 public class Test {
     public static void main(String[] args) {
         System.out.println(Data.e);
