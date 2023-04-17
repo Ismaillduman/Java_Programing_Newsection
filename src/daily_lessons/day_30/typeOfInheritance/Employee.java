@@ -1,5 +1,6 @@
 package daily_lessons.day_30.typeOfInheritance;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Employee extends Person {
@@ -7,7 +8,7 @@ public class Employee extends Person {
     private String employeeId;
     private double salary;
 
-    public Employee(String name, int age, char gender, LocalDateTime DOB, String jobTitle, String employeeId, double salary) {
+    public Employee(String name, int age, char gender, LocalDate DOB, String jobTitle, String employeeId, double salary) {
         super(name, age, gender, DOB);
         setJobTitle(jobTitle);
         setSalary(salary);
