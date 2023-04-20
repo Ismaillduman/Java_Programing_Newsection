@@ -12,7 +12,7 @@ public class Cat extends Animal{
 
     @Override
     public void eat() {
-        System.out.println("Cat "+getName()+ "is eating Cat foods");
+        System.out.println(getClass().getSimpleName()+" "+getName()+ "is eating Cat foods");
     }
 
     @Override

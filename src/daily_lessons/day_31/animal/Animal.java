@@ -8,12 +8,16 @@ public class Animal {
 
     public Animal(String name, String color, String size, String breed, int age, char gender) {
 
-        setName(name);
+        this.name=name;
         setColor(color);
         setSize(size);
         setBreed(breed);
         setAge(age);
         setGender(gender);
+    }
+
+    public Animal(){
+        setName(getClass().getSimpleName());
     }
 
     public String getName() {
@@ -65,7 +69,7 @@ public class Animal {
     }
 
     public void eat(){
-        System.out.println(getName()+" is eating food");
+        System.out.println(getClass().getSimpleName()+" "+getName()+" is eating food");
     }
     public void drink(){
         System.out.println(getName()+" is drinking water");
