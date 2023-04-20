@@ -1,4 +1,4 @@
-package practiseTasks.day_31;
+package practiseTasks.day_31.states;
 
 public class States {
 
@@ -8,13 +8,14 @@ public class States {
 
     public States(String name, String politicalParty, String senator, String governor, String abbreviation,
                   int population, double stateTask) {
-        this.name = name;
-        this.politicalParty = politicalParty;
-        this.senator = senator;
-        this.governor = governor;
-        this.abbreviation = abbreviation;
-        this.population = population;
-        this.stateTask = stateTask;
+       setName(name);
+       setPoliticalParty(politicalParty);
+       setSenator(senator);
+       setGovernor(governor);
+       setAbbreviation(abbreviation);
+       setPopulation(population);
+       setStateTask(stateTask);
+
     }
 
     public String getName() {
