@@ -18,6 +18,11 @@ public class Lion extends Animal{
     }
 
     @Override
+    public void eat() {
+        System.out.println("Lion "+getName()+" is eating deer");
+    }
+
+    @Override
     public String toString() {
         return super.toString().replace("{","")+
                 ", is African Lion=" + isAfricanLion() +
