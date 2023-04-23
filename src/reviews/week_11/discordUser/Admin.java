@@ -1,7 +1,7 @@
 package reviews.week_11.discordUser;
 
 public class Admin extends DiscordUser {
-    public Admin(String role, String name, int id) {
+    public Admin( String name, int id) {
         super("Admin", name, id);
     }
     public void createChannel(){

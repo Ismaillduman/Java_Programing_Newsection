@@ -4,7 +4,7 @@ public class Student extends DiscordUser {
 
     int loverJava;
 
-    public Student(String role, String name, int id, int loverJava) {
+    public Student( String name, int id, int loverJava) {
         super("Student", name, id);
         this.loverJava = loverJava;
 
