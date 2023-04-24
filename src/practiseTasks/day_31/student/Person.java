@@ -6,9 +6,9 @@ public class Person {
     private char gender;
 
     public Person(String name, int age, char gender) {
-       setName(name);
-       setAge(age);
-       setGender(gender);
+        setName(name);
+        setAge(age);
+        setGender(gender);
 
     }
 
@@ -17,24 +17,22 @@ public class Person {
     }
 
     public void setName(String name) {
-        if(name==null||name.isEmpty()){
+        if (name == null || name.isEmpty()) {
             System.err.println("name should not be set to null or not to be empty");
             System.exit(1);
         }
-        for (char each:name.toCharArray()
-             ) {
-            if(!Character.isLetterOrDigit(each)||Character.isSpaceChar(each)){
+        for (char each : name.toCharArray()
+        ) {
+            if (!Character.isLetterOrDigit(each) || Character.isSpaceChar(each)) {
                 System.out.println("name should not contain any special character other than space");
                 System.exit(1);
-            }
-            else {
-                this.name=name;
+            } else {
+                this.name = name;
             }
         }
 
 
-        }
-
+    }
 
 
     public int getAge() {
@@ -55,7 +53,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return getClass().getSimpleName()+"{" +
+        return getClass().getSimpleName() + "{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", gender=" + gender +
