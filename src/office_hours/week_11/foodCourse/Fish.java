@@ -15,4 +15,9 @@ public class Fish extends Entree{
     public void setFishType(String fishType) {
         this.fishType = fishType;
     }
+
+    @Override
+    public void setPrice(double price) {
+        super.setPrice(price);
+    }
 }
