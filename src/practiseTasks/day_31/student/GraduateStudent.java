@@ -1,10 +1,10 @@
 package practiseTasks.day_31.student;
 
 public class GraduateStudent extends Student{
-    public GraduateStudent(String name, int age, char gender, String studentId, String fieldOfStudy, char grade) {
-        super(name, age, gender, studentId, fieldOfStudy, grade);
+    public GraduateStudent(String name, int age, char gender, String studentId, String fieldOfStudy, char grade, String schoolName) {
+        super(name, age, gender, studentId, fieldOfStudy, grade, schoolName);
     }
-    /*GraduateStudent:
+   /*GraduateStudent:
 
                         Override the study method
 

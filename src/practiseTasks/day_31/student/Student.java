@@ -3,13 +3,15 @@ package practiseTasks.day_31.student;
 public class Student extends Person{
     private String studentId,fieldOfStudy;
     private  char grade;
-    private static String schoolName;
+    private  String schoolName;
 
-    public Student(String name, int age, char gender, String studentId, String fieldOfStudy, char grade) {
+    public Student(String name, int age, char gender, String studentId, String fieldOfStudy, char grade, String schoolName) {
         super(name, age, gender);
         this.studentId = studentId;
-        this.fieldOfStudy = fieldOfStudy;
-        this.grade = grade;
+        setFieldOfStudy(fieldOfStudy);
+        setGrade(grade);
+        setSchoolName(schoolName);
+
     }
 
     public String getStudentId() {
@@ -46,16 +48,16 @@ if(!(grade=='A'||grade=='B'||grade=='C'||grade=='D'||grade=='F')){
 
     }
 
-    public static String getSchoolName() {
+    public  String getSchoolName() {
         return schoolName;
     }
 
-    public static void setSchoolName(String schoolName) {
+    public void setSchoolName(String schoolName) {
         if(schoolName==null||schoolName.isEmpty()){
             System.err.println("Invalid school name");
             System.exit(1);
         }
-        Student.schoolName = schoolName;
+        this.schoolName = schoolName;
     }
 
     public void study(){

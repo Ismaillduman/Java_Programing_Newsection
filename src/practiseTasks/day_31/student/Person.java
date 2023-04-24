@@ -1,5 +1,7 @@
 package practiseTasks.day_31.student;
 
+import java.sql.SQLOutput;
+
 public class Person {
     private String name;
     private int age;
@@ -50,7 +52,15 @@ public class Person {
     public void setGender(char gender) {
         this.gender = gender;
     }
-
+public void eat(){
+    System.out.println(name+" is eating");
+}
+public void drink(){
+    System.out.println(name+" is drinking");
+}
+public void sleep(){
+    System.out.println(name+"is sleeping");
+}
     @Override
     public String toString() {
         return getClass().getSimpleName() + "{" +
