@@ -64,7 +64,7 @@ public class CydeoStudent extends Student{
 
     @Override
     public String toString() {
-        return "CydeoStudent{" +super.toString().replace("}","")+
+        return "CydeoStudent{" +super.toString().replace("{","")+
                 "batchNumber=" + batchNumber +
                 ", groupNumber=" + groupNumber +
                 ", programmingLanguage='" + programmingLanguage + '\'' +
