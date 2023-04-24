@@ -13,18 +13,15 @@ public class Person {
         numberOfHead = 2;
     }
 
-    public Person(String name, int age, char gender, LocalDate dateOfBirth) {
+    public Person(String name,  char gender, LocalDate dateOfBirth) {
         this.name = name;
 
         if (!(gender == 'M' || gender == 'F')) {
             System.err.println("invalid gender");
             System.exit(1);
         }
-        if (age <= 0) {
-            System.err.println("invalid age");
-            System.exit(1);
-        }
-        this.age = age;
+
+        this.age = LocalDate.now().getYear()-dateOfBirth.getYear();
         this.gender = gender;
         this.dateOfBirth = dateOfBirth;
     }
@@ -69,5 +66,15 @@ public class Person {
 
     public final void breath() {
         System.out.println(name + " is breathing");
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                ", dateOfBirth=" + dateOfBirth +
+                '}';
     }
 }
