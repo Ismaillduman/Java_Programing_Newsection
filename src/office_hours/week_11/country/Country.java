@@ -20,6 +20,54 @@ private String name;
         this.population = population;
     }
 
+    public static String getPlanet() {
+        return planet;
+    }
+
+    public static void setPlanet(String planet) {
+        Country.planet = planet;
+    }
+
+    public static double getWorldPopulation() {
+        return worldPopulation;
+    }
+
+    public static void setWorldPopulation(double worldPopulation) {
+        Country.worldPopulation = worldPopulation;
+    }
+
+    public static double getWorldCo2Level() {
+        return worldCo2Level;
+    }
+
+    public static void setWorldCo2Level(double worldCo2Level) {
+        Country.worldCo2Level = worldCo2Level;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getContinent() {
+        return continent;
+    }
+
+    public void setContinent(String continent) {
+        this.continent = continent;
+    }
+
+    public double getPopulation() {
+        return population;
+    }
+
+    public void setPopulation(double population) {
+        this.population = population;
+    }
+
     @Override
     public String toString() {
         return "Country{" +
