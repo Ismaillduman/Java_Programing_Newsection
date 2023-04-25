@@ -3,8 +3,8 @@ package office_hours.week_12.super_hero;
 public class DC extends SuperHero{
     private String city;
 
-    public DC(String heroName, String realName, String universe, String make, String city) {
-        super(heroName, realName, universe, make);
+    public DC(String heroName, String realName, String city) {
+        super(heroName, realName);
         this.city = city;
     }
 
@@ -18,7 +18,7 @@ public class DC extends SuperHero{
 
     @Override
     public void protect() {
-        System.out.println("super_hero protecting with honor");
+        System.out.println(getHeroName()+" protecting with honor");
     }
     /*Create a class DC
         inherits SuperHero

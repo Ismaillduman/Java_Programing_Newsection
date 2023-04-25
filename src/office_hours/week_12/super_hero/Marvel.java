@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Marvel extends SuperHero {
     public Marvel(String heroName, String realName) {
-        super(heroName, realName, "Marvel", "Marvel");
+        super(heroName, realName);
     }
 
     public void callAvengers(){

@@ -8,7 +8,7 @@ public class SuperHero {
 
     public ArrayList<String> powers;
 
-    public SuperHero(String heroName, String realName, String universe, String make) {
+    public SuperHero(String heroName, String realName) {
         powers = new ArrayList<>();
         this.heroName = heroName;
         this.realName = realName;
