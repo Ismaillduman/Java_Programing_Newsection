@@ -40,7 +40,7 @@ public class Movie {
     }
 
     public static void main(String[] args) {
-        Movie movie= new Movie("usa","Avengers","Ismail Duman","Action fantasy",LocalDate.of(2023,5,12));
+        Movie movie= new Movie("usa", "avengers","Ismail Duman","Action fantasy",LocalDate.of(2023,5,12));
         System.out.println(movie);
         movie.addCast("Busra");
         movie.addCasts(new String[]{"yusuf","zübeyde","damla"});
