@@ -18,8 +18,8 @@ public static final String programmingLanguage;
             System.exit(1);
         }
         this.id = id;
-        this.batchName = batchName;
-        this.batchNo = batchNo;
+        setBatchName(batchName);
+       setBatchNo(batchNo);
     }
 
     static {
@@ -43,6 +43,7 @@ public static final String programmingLanguage;
             this.batchName = batchName;
         }else{
             System.err.println("invalid batch name "+batchName);
+            System.exit(1);
         }
 
     }
