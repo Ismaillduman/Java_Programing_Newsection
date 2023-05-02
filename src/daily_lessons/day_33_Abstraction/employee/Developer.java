@@ -20,4 +20,11 @@ public class Developer extends Employee {
     public void work() {
         System.out.println(getName()+" is coding "+programmingLanguage);
     }
+
+    @Override
+    public String toString() {
+        return super.toString().replace("}","") +
+                "programmingLanguage='" + programmingLanguage + '\'' +
+                '}';
+    }
 }
