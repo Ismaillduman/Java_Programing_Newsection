@@ -74,9 +74,9 @@ public static final String programmingLanguage;
 
     @Override
     public String toString() {
-        return super.toString().replace("{","")+
-                "CydeoDevStudent{" +
-                "id='" + id + '\'' +
+        return super.toString().replace("}","")+
+
+                " id='" + id + '\'' +
                 ", batchName='" + batchName + '\'' +
                 ", batchNo=" + batchNo +
                 '}';
