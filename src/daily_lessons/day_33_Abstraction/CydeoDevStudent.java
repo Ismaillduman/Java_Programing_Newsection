@@ -4,7 +4,7 @@ import daily_lessons.day_32_final_keyword.person.Person;
 
 import java.time.LocalDate;
 
-public class CydeoDevStudent extends Person {
+public final class CydeoDevStudent extends Person {
 private final String id;
 private String batchName;
 private int batchNo;
@@ -48,6 +48,37 @@ public static final String programmingLanguage;
     }
 
     public void setBatchNo(int batchNo) {
+        if(batchNo<=0){
+            System.err.println("invalid batch number "+batchNo);
+            System.exit(1);
+        }
         this.batchNo = batchNo;
+    }
+
+    @Override
+    public void eat() {
+        System.out.println(getName()+" is eating "+programmingLanguage);
+
+    }
+
+    @Override
+    public void drink() {
+        System.out.println(getName()+" is drinking "+programmingLanguage);
+
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println(getName()+" does not need to sleep");
+    }
+
+    @Override
+    public String toString() {
+        return super.toString().replace("{","")+
+                "CydeoDevStudent{" +
+                "id='" + id + '\'' +
+                ", batchName='" + batchName + '\'' +
+                ", batchNo=" + batchNo +
+                '}';
     }
 }
