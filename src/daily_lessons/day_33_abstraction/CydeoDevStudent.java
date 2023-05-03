@@ -1,4 +1,4 @@
-package daily_lessons.day_33_Abstraction;
+package daily_lessons.day_33_abstraction;
 
 import daily_lessons.day_32_final_keyword.person.Person;
 

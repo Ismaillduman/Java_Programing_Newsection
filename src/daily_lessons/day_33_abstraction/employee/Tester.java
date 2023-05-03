@@ -1,4 +1,4 @@
-package daily_lessons.day_33_Abstraction.employee;
+package daily_lessons.day_33_abstraction.employee;
 
 public class Tester extends Employee{
 
