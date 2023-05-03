@@ -1,8 +1,8 @@
 package daily_lessons.day_34_abstraction_continue.car;
 
 public class Audi extends Car {
-    public Audi(String make, String model, String color, int year, double price) {
-        super(make, model, color, year, price);
+    public Audi( String model, String color, int year, double price) {
+        super( model, color, year, price);
     }
 
     @Override

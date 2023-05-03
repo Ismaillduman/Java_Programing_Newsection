@@ -7,7 +7,7 @@ public abstract class Car {
     private double price;
 
 
-    public Car(String make, String model, String color, int year, double price) {
+    public Car( String model, String color, int year, double price) {
         this.make = getClass().getSimpleName();
         this.model = model;
         this.color = color;
@@ -55,15 +55,15 @@ public abstract class Car {
         this.price = price;
     }
     protected final void stop(){  //when i want to never change final keyword
-        System.out.println("Press the break to stop"+make+" "+model);
+        System.out.println("Press the break to stop "+make+" "+model);
     }
     protected abstract void start();
 
     @Override
     public String toString() {
         return make+"{" +
-                "make='" + make + '\'' +
-                ", model='" + model + '\'' +
+
+                "model='" + model + '\'' +
                 ", color='" + color + '\'' +
                 ", year=" + year +
                 ", price= $" + price +
