@@ -20,7 +20,8 @@ public abstract class Device {
             System.exit(1);
         }
         this.model = model;
-        this.price = price;
+
+        setPrice(price);
         this.color = color;
         this.size = size;
         this.hasBattery = hasBattery;
