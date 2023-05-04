@@ -8,8 +8,13 @@ public abstract class Device {
    private final char size;
    private boolean hasBattery, hasPowerButton;
 
-    public Device( String model, double price, String color, char size, boolean hasBattery, boolean hasPowerButton) {
-        this.brand = getClass().getSimpleName();
+    public Device( String brand,String model, double price, String color, char size, boolean hasBattery, boolean hasPowerButton) {
+
+        if(brand==null||brand.isBlank()||brand.isEmpty()){
+            System.err.println("Invalid brand name "+brand);
+            System.exit(1);
+        }
+        this.brand = brand;
         if(model==null||model.isEmpty()||model.isBlank()){
             System.err.println("Invalid model, model can not be null , empty or blank");
             System.exit(1);

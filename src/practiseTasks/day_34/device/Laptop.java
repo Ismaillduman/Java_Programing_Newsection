@@ -1,8 +1,10 @@
 package practiseTasks.day_34.device;
 
 public class Laptop extends Computer{
-    public Laptop(String model, double price, String color, char size, boolean hasBattery, boolean hasPowerButton) {
-        super(model, price, color, size, hasBattery, hasPowerButton);
+
+
+    public Laptop(String brand, String model, double price, String color, char size, boolean hasBattery, boolean hasPowerButton) {
+        super(brand, model, price, color, size, hasBattery, hasPowerButton);
     }
 
     @Override

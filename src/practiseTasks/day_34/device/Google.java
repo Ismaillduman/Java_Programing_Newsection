@@ -1,8 +1,8 @@
 package practiseTasks.day_34.device;
 
 public class Google extends Phone implements Downloadable,AndroidApps {
-    public Google(String model, double price, String color, char size, boolean hasBattery, boolean hasPowerButton) {
-        super(model, price, color, size, hasBattery, hasPowerButton);
+    public Google(String brand,String model, double price, String color, char size, boolean hasBattery, boolean hasPowerButton) {
+        super(brand,model, price, color, size, hasBattery, hasPowerButton);
     }
 
     @Override
