@@ -8,7 +8,7 @@ public class CarShop {
 
             Analyze the relationships between the classes*/
 public static void main(String[] args) {
-    Audi audi= new Audi("A3",2019,28000,"grey");
+    Audi audi= new Audi(" ",2019,28000,"grey");
     CydeoCar cydeoCar= new CydeoCar("VirginiaX",2023,56000,"Green");
     BMW bmw= new BMW("X5",2021,38000,"Black");
     Honda honda= new Honda("Civic",2023,30000,"Green");

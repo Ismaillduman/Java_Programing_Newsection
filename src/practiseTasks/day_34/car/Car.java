@@ -9,8 +9,8 @@ public abstract class Car {
     public Car( String model, int year, double price, String color) {
 
         this.make = getClass().getSimpleName();
-        if(model==null||model.isEmpty()){
-            System.err.println("model can not be null");
+        if(model==null||model.isEmpty()||model.isBlank()){
+            System.err.println("model can not be null or empty or blank");
             System.exit(1);
         }
         this.model = model;
