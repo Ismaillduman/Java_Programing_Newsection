@@ -2,12 +2,12 @@ package daily_lessons.day_36_polymorphism_continue;
 
 import java.util.Arrays;
 
-public class IPhone {
+public class ApplePhone {
     private String brand, model, size, color;
     private double price;
 
-    public IPhone(String brand, String model, String size, String color, double price) {
-        setBrand(brand);
+    public ApplePhone(String model, String size, String color, double price) {
+
         setModel(model);
         setSize(size);
         setColor(color);
@@ -18,9 +18,7 @@ public class IPhone {
         return brand;
     }
 
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
+
 
     public String getModel() {
         return model;
@@ -86,11 +84,11 @@ public class IPhone {
 
     @Override
     public boolean equals(Object obj) {
-        if(!(obj instanceof IPhone)){
+        if(!(obj instanceof ApplePhone)){
             System.err.println("Invalid obj, please enter Iphone");
             System.exit(1);
         }
-        if(model.equals(((IPhone)obj).model)){
+        if(model.equals(((ApplePhone)obj).model)){
             return true;
         }
         return false;

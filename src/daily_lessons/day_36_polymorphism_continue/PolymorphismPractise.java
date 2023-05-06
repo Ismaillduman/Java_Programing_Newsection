@@ -29,9 +29,10 @@ public class PolymorphismPractise {
         int countIphone = 0,
                 countSamsung = 0;
         for (Phone each : phones) {
-            if (each instanceof IPhone) {
+            if(each instanceof IPhone){
                 countIphone++;
-            } else if (each instanceof Samsung) {
+            }
+            if (each instanceof Samsung) {
                 countSamsung++;
             }
         }
@@ -39,7 +40,7 @@ public class PolymorphismPractise {
         System.out.println("countIphone = " + countIphone);
 
         for (Phone each : phones) {
-            if(each instanceof IPhone || each instanceof Samsung){
+            if(each instanceof Samsung){
                 if(each.getPrice()>=700){
                     System.out.println("Model of phones = " + each.getModel());
                 }
