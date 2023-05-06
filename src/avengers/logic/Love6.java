@@ -1,4 +1,4 @@
-package avengers.session_01;
+package avengers.logic;
 
 public class Love6 {
     public boolean love6(int a, int b){
