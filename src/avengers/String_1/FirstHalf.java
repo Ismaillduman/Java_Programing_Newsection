@@ -39,9 +39,16 @@ middleThree("solving") → "lvi"*/
         int mid= str.length()/2;
         return str.substring(mid-1,mid+2);
     }
+    public String right2(String str) {
+        return str.substring(str.length()-2)+str.substring(0,str.length()-2);
+
+    }
+
+
 
     public static void main(String[] args) {
         FirstHalf firstHalf= new FirstHalf();
         System.out.println(firstHalf.middleThree("solving"));
     }
+
 }
