@@ -6,7 +6,7 @@ public abstract class Car {
     private double price;
     private String color;
 
-    public Car( String model, int year, double price, String color) {
+    public Car( String model,int year , double price, String color) {
 
         this.make = getClass().getSimpleName();
         if(model==null||model.isEmpty()||model.isBlank()){
@@ -75,6 +75,8 @@ public abstract class Car {
                 ", color='" + color + '\'' +
                 '}';
     }
+
+
 /*Create an Abstract class named Car:
 				Variables:
 					make (final), model (final), year (final), price, color
