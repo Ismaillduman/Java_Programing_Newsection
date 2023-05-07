@@ -11,6 +11,9 @@ public interface Language {
                 "There is often rules or syntax for how the words come together");
 
     }
-
+    default void translate(Language lang, String msg){
+        System.out.println("Translating " +  msg + " in " +
+                getClass().getSimpleName() + " into " + lang.getClass().getSimpleName());
+    }
 
 }

@@ -15,6 +15,7 @@ public class ClassRoom {
         // spanish.description(); static methods can not inherited from interface
         Language.description();
         System.out.println(spanish.default_Coding);
+        english.translate(spanish,"Hi How are you");
 
     }
 }
