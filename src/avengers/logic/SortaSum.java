@@ -1,4 +1,4 @@
-package avengers.session_01;
+package avengers.logic;
 
 public class SortaSum {
     /*
