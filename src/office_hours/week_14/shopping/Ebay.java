@@ -23,7 +23,7 @@ public class Ebay extends OnlineShopping implements AllowUsersToSell {
 
     @Override
     protected void returnItem() {
-        System.out.println("product sent back");
+        System.out.println("product sent back to Ebay");
     }
     /* Make the class final
         - Inherit OnlineShopping and implements interface AllowUsersToSell interface

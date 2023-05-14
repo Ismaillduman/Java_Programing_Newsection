@@ -8,7 +8,7 @@ public final class Amazon extends OnlineShopping {
 
     @Override
     public void shipItem() {
-        System.out.println("Products is shipping");
+        System.out.println("Products is shipping from Amazon");
     }
 
     @Override
@@ -19,6 +19,9 @@ public final class Amazon extends OnlineShopping {
     @Override
     protected void returnItem() {
         System.out.println("Some items return to Amazon");
+    }
+    protected void amazonPrime(){
+        System.out.println("Movies and music stream");
     }
     /*Create a concrete class Amazon
         - Make the class final
