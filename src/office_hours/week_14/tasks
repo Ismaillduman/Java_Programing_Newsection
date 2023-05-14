@@ -1,0 +1,39 @@
+Shopping [Abstraction, Polymorphism]
+
+    Use some printing related to the class as the implementation of the methods
+
+    Create an abstract class Shopping
+        - Declare two abstract methods:
+            buyItem(), returnItem()
+
+    Create an interface Shipping
+        - Declare an abstract methods:
+            shipItem()
+
+    Create a concrete class Target
+        - Make the class final
+        - Inherit Shopping and implement Shipping
+        - implement all abstract methods
+
+    Create an abstract class OnlineShopping
+        - Inherit Shopping and implement Shipping
+        - Does not need to implement any abstract methods
+        - Declare an abstract methods:
+            viewCart()
+
+    Create a concrete class Amazon
+        - Make the class final
+        - Inherit OnlineShopping and implement all abstract methods
+
+    Create an interface AllowUsersToSell
+        - Declare an abstract method:
+            uploadProduct()
+
+    Create a concrete class EBay
+        - Make the class final
+        - Inherit OnlineShopping and implements interface AllowUsersToSell interface
+        - Implement all abstract methods
+
+    Create a class Warehouse
+    create a main method and create Target, Amazon, & EBay object to test the methods
+    also use different polymorphic references to check what is accessible
