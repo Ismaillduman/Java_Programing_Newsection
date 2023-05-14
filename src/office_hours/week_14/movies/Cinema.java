@@ -5,9 +5,9 @@ import java.util.ArrayList;
 public final class Cinema implements PlayMovie {
     /* location, number of theaters, List of Movies*/
 
-    private String location;
-    private int numOfTheaters;
-    private ArrayList<Movie> movies;
+    String location;
+   int numOfTheaters;
+    ArrayList<Movie> movies;
 
     public Cinema(String location, int numOfTheaters, ArrayList<Movie> movies) {
         this.location = location;

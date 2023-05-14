@@ -94,7 +94,8 @@ Shopping [Abstraction, Polymorphism]
             create a main method and create Movie, Cinema, Netflix, Amazon, & Hulu objects
             create a List of all the StreamingSites used. Then subscribe to them all.
                 extra: you can also pause the movie
-            create a List of PlayMovie and add multiple different Cinema and StreamingSite objects. Then play your favorite movie on all of the options
+            create a List of PlayMovie and add multiple different Cinema and StreamingSite objects.
+            Then play your favorite movie on all of the options
 
             create a method to determine which StreamingSite is the best for you.
                 parameter: StreamingSite
