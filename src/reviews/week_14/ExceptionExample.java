@@ -1,7 +1,7 @@
 package reviews.week_14;
 
 public class ExceptionExample {
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
 
         try {
             String s= null;
@@ -12,6 +12,17 @@ public class ExceptionExample {
         }
 
         System.out.println("End");
+
+        System.out.println("-----------------------------------------------------------");
+        try {
+            System.out.println("Hello");
+            Thread.sleep(3000);
+            System.out.println("World");
+
+        }catch (InterruptedException e){
+
+        }
+
 
     }
 }
