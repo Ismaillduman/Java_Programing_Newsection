@@ -16,7 +16,7 @@ public class ListDemo {
         LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.addAll(Arrays.asList(100, 200, 300));
         linkedList.remove(0);
-        linkedList.get(0);
+        System.out.println("linkedList.get(0) = " + linkedList.get(0));
         System.out.println(linkedList);
         System.out.println("---------------------------------------------");
         Vector<Integer> vector = new Vector<>(Arrays.asList(100, 200, 300));
