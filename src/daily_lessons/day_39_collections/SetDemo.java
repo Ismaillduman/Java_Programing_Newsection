@@ -38,7 +38,7 @@ public class SetDemo {
         System.out.println(result);
         System.out.println("==============================");
 
-        words= result.toArray(new String[0]); //from collection to Array
+        words= result.toArray(new String[0]); //from Set to Array
         System.out.println(words);
         System.out.println("------------------------------------");
         //System.out.println(result.get(1)); set hast not size number
@@ -49,7 +49,7 @@ public class SetDemo {
         System.out.println("-----------------------------------------------------");
         List<Integer> numbers= new ArrayList<>();
         numbers.addAll(Arrays.asList(10,10,10,10,20,20,20,30,30,52,0,14,2));
-        SortedSet<Integer> n= new TreeSet<>(numbers);
+        SortedSet<Integer> n= new TreeSet<>(numbers); //list to Set
         System.out.println(n);
     }
 
