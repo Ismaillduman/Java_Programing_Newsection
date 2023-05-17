@@ -15,14 +15,22 @@ public class IterableExample {
 //               list2.add(list.get(i));
 //            }
 //        }
-//        System.out.println(list2);
+//        System.out.println("list2 = " + list2);
 
-        for (int i = 0; i <list.size() ; i++) {
-            if(list.get(i)<5){
+//        for (int i = 0; i <list.size() ; i++) {
+//            if(list.get(i)<5){
+//                list.remove(i);
+//            }
+//        }
+
+        for (int i = list.size() - 1; i >= 0; i--) {
+            if (list.get(i) < 5) {
                 list.remove(i);
             }
         }
-        System.out.println(list);
+        System.out.println("list with reverse For  = " + list);
+        list.removeIf(p->p<5);//removeIf apply implicitly iterable
+        System.out.println("list with removeIf= " + list);
 
     }
 }
