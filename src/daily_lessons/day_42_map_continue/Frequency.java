@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class tasks {
+public class Frequency {
     public static void main(String[] args) {
         String str = "Hello, World!";
         frequency(str);
