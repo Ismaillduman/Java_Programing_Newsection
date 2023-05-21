@@ -3,7 +3,7 @@ package daily_lessons.day_42_map_continue;
 import java.time.LocalDate;
 import java.util.*;
 
-public class MapPractice2 {
+public class ListOfMap {
     public static void main(String[] args) {
         Map<String, Object> person1 = new LinkedHashMap<>();
         person1.put("name", "Arthur");
